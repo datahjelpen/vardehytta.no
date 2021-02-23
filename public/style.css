@@ -1,0 +1,39 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 24px;
+  background-color: #19183d;
+}
+
+body {
+  font-size: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #19183d;
+}
+
+#logo {
+  max-width: 384px;
+  width: 100%;
+}
+
+#logo img {
+  width: 100%;
+  height: auto;
+}

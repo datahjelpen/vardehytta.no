@@ -1,7 +1,7 @@
 const bs = require("browser-sync").create();
 
 bs.init({
-  server: "./public",
+  server: "./src",
   open: false,
   files: ["**/*.html", "**/*.css"],
 });

@@ -1,0 +1,13 @@
+variables:
+  DEPLOY_TO_K8S: "true"
+  NAMESPACE: "clients-vardehytta-no"
+
+stages:
+  - build
+  - release
+  - deploy
+
+include:
+  - project: datahjelpen/internal/devops/gitlab-ci
+    ref: main
+    file: NpmDeploy.gitlab-ci.yml

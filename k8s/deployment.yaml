@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vardehytta-no-deployment
+  namespace: clients-vardehytta-no
+spec:
+  selector:
+    matchLabels:
+      app: vardehytta-no-app
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: vardehytta-no-app
+    spec:
+      containers:
+        - name: vardehytta-no-app
+          image: registry.gitlab.com/datahjelpen/clients/eh-invest-as/vardehytta-no
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+          resources:
+            requests:
+              cpu: "1m"
+              memory: "5Mi"
+            limits:
+              cpu: "3000m"
+              memory: "20Mi"
+      imagePullSecrets:
+        - name: gitlab-container-registry

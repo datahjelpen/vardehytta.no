@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "node server.js",
+    "build": "rm -rf dist && cp -R src dist",
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

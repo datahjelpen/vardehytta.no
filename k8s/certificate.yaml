@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: vardehytta-no-certificate
+  namespace: clients-vardehytta-no
+spec:
+  dnsNames:
+    - vardehytta.no
+    - www.vardehytta.no
+  secretName: vardehytta-no-tls
+  issuerRef:
+    name: letsencrypt-cluster-issuer
+    kind: ClusterIssuer

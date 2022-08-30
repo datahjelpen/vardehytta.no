@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Datahjelpen/vardehytta.no.git"
+    "url": "git+https://gitlab.com/datahjelpen/clients/eh-invest-as/vardehytta-no.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Datahjelpen/vardehytta.no/issues"
+    "url": "https://gitlab.com/datahjelpen/clients/eh-invest-as/vardehytta-no/issues"
   },
-  "homepage": "https://github.com/Datahjelpen/vardehytta.no#readme",
+  "homepage": "https://gitlab.com/datahjelpen/clients/eh-invest-as/vardehytta-no#readme",
   "devDependencies": {
     "browser-sync": "^2.26.14"
   }

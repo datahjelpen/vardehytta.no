@@ -10,4 +10,4 @@ stages:
 include:
   - project: datahjelpen/internal/devops/gitlab-ci
     ref: main
-    file: NpmDeploy.gitlab-ci.yml
+    file: NpmDeployWebhook.gitlab-ci.yml

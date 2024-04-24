@@ -1,0 +1,14 @@
+services:
+  nginx:
+    image: "registry.gitlab.com/datahjelpen/clients/eh-invest-as/vardehytta-no"
+    restart: always
+    ports:
+      - "8082:80"
+    networks:
+      nginx-proxy-manager_default:
+        aliases:
+          - datahjelpen_clients_eh-invest-as_vardehytta-no
+
+networks:
+  nginx-proxy-manager_default:
+    external: true
